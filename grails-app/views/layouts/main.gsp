@@ -20,6 +20,7 @@
 	
 		<header>
 		<h1>BLOGGY BLUES FORUM</h1>
+		<g:actionSubmit value="Some update label" action="update" />
 		<div id="BloggyBlueLogo" role="banner"><a href="localhost:8080/BloggyBlues/"><asset:image src="FroggyBlue.png" alt="FroggyBlue"/></a></div>
 		<g:layoutBody/>
 		</header>
