@@ -17,6 +17,7 @@
 
 .blogTitle a:link{
 	text-decoration: none;
+	color:black;
 }
 
 .blogTitle a:hover{

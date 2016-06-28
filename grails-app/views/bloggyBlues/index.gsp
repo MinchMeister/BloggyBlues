@@ -24,7 +24,7 @@
 			<div class="list">
 			 	<g:each in="${bloggyBluesInstanceList}" status="i" var="bloggyBluesInstance">
 			  		<div class="blog">
-			   			<h1 class="blogTitle"><g:link action="show" id="${bloggyBluesInstance.id}" >${bloggyBluesInstance.postTitle}</g:link></h1>
+			   			<h2 class="blogTitle"><g:link action="show" id="${bloggyBluesInstance.id}" >${bloggyBluesInstance.postTitle}</g:link></h2>
 			   			<h3 id="${bloggyBluesInstance.id}" class="blogAuthor">By: ${bloggyBluesInstance.author}</h3>
 			   			<span>Date posted: ${bloggyBluesInstance.creationDate}</span>
 			   			<div class="blogPost">${bloggyBluesInstance.content}</div>                

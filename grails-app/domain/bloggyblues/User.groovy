@@ -6,6 +6,8 @@ class User {
 	String password
 	String name
 	
+	static searchable = true
+	
 	static constraints = {
 	    login(unique:true)
 	    password(password:true)
