@@ -29,12 +29,4 @@
 
 </div>
 
-<div class="fieldcontain ${hasErrors(bean: userInstance, field: 'blogs', 'error')} ">
-	<label for="blogs">
-		<g:message code="user.blogs.label" default="Blogs" />
-		
-	</label>
-	<g:select name="blogs" from="${bloggyblues.BloggyBlues.list()}" multiple="multiple" optionKey="id" size="5" value="${userInstance?.blogs*.id}" class="many-to-many"/>
-
-</div>
 

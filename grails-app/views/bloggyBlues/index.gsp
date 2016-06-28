@@ -9,9 +9,8 @@
 	<body>
 		<div class="nav" role="navigation">
 			<ul>
-				<li><a class="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a></li>
+			
 				<li><g:link class="create" action="create">New Blog</g:link></li>
-				<li><a class="login" href="${createLink(uri:'/user/login')}">Login</a></li>
 			</ul>
 		</div>
 		<div id="list-bloggyBlues" class="content scaffold-list" role="main">
