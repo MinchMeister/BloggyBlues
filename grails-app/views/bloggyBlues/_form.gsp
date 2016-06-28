@@ -14,7 +14,7 @@
 		<g:message code="bloggyBlues.author.label" default="Author" />
 		<span class="required-indicator">*</span>
 	</label>
-	<g:textField name="author" required="" value="${bloggyBluesInstance?.author}"/>
+	<g:textField name="author" required="" value="${session.user}"/>
 
 </div>
 

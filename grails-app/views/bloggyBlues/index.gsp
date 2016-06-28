@@ -9,8 +9,10 @@
 	<body>
 		<div class="nav" role="navigation">
 			<ul>
-			
-				<li><g:link class="create" action="create">New Blog</g:link></li>
+				<g:if test="${session.user}">
+					<li><g:link class="create" action="create">New Blog</g:link></li>
+				</g:if>
+					
 			</ul>
 		</div>
 		<div id="list-bloggyBlues" class="content scaffold-list" role="main">
