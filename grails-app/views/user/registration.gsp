@@ -4,7 +4,17 @@
     <title>Register</title>         
   </head>
 <body>
-	<g:form class="simpleform" url="&#91;controller:'user',action:'register'&#93;">
+
+		<div class="body">
+			<g:if test="${flash.message}">
+				<div class="message">${flash.message}</div>
+			</g:if>
+			
+			<g:form action="register" method="post">
+			
+		
+		</div>
+
 	  <fieldset>
 	    <legend>User Registration</legend>
 	    <p class="info">
@@ -40,6 +50,6 @@
 	      <g:submitButton class="button" name="submitButton" value="Create Account" />
 	    </p>
 	  </fieldset>
-	</g:form>
+	
 </body>
 </html>
