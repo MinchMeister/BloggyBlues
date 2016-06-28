@@ -10,8 +10,14 @@ class BloggyBlues {
     static constraints = {
     	postTitle(blank:false)
     	author(blank:false)
-    	creationDate(nullable:false)
+    	creationDate()
     	content(maxSize:5000, nullable:true)
     }
+    
+    static mapping = {
+    	sort "creationDate":"desc"
+    }
+    
+    static belongsTo = [author:User]
 
   }

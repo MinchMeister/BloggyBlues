@@ -2,6 +2,7 @@ package bloggyblues
 
 class BloggyBluesController {
 
-	def scaffold = true
+	def scaffold = BloggyBlues
+	
 	
 }
