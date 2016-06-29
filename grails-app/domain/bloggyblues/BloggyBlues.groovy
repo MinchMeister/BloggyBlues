@@ -7,7 +7,6 @@ class BloggyBlues {
 	Date creationDate
 	String content
 	
-	static searchable = true
 	
     static constraints = {
     	postTitle(blank:false)

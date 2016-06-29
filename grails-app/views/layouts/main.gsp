@@ -20,18 +20,19 @@
 	<body>
 	
 		<header>
-		<h1>BLOGGY BLUES FORUM</h1>
-		<div id="BloggyBlueLogo" role="banner"><a class="home" href="${createLink(uri: '/')}"><asset:image src="FroggyBlue.png" alt="FroggyBlue"/></a>
-		</div>
-		
-		<div id="loginHeader">
-			<g:loginControl/>
-		</div>
+			<div class="header">
+				<h1>BLOGGY BLUES FORUM</h1>
+				<div id="BloggyBlueLogo" role="banner"><a class="home" href="${createLink(uri: '/')}"><asset:image src="FroggyBlue.png" alt="FroggyBlue"/></a></div>
+			
+				<div id="loginHeader">
+					<g:loginControl/>
+				</div>
+			
+			</div>	
+	
+			
+			
 		</header>
-		
-		
-		
-		
 		
 		<g:layoutBody/>
 		
