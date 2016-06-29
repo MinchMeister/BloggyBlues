@@ -16,28 +16,30 @@
 		<asset:javascript src="application.js"/>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 		<g:javascript library="jquery" />
+		<asset:stylesheet src="main.css"/>
 		<g:layoutHead/>
 	</head>
 	<body>
 	
-		<header>
+		
 			<div class="header">
 				<h1>BLOGGY BLUES FORUM</h1>
-				<div id="BloggyBlueLogo" role="banner"><a class="home" href="${createLink(uri: '/')}"><asset:image src="FroggyBlue.png" alt="FroggyBlue"/></a></div>
-			
+				<div id="BloggyBlueLogo" role="banner">
+					<a class="home" href="${createLink(uri: '/')}"><asset:image src="FroggyBlue.png" alt="FroggyBlue"/></a>
+				</div>
+				<a id="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a>
 				<div id="loginHeader">
 					<g:loginControl/>
 				</div>
-			</div>
-		</header>
-		
-		<g:layoutBody/>
-		
-		<footer>
-		<br/>
-		<div class="footer" role="contentinfo"><b>Minch'n'Schoen Conglomerate LLC</b></div>
-		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
-		</footer>
+				<g:form controller="bloggyBlues" method="post" >
+					<input id="searchTextField" type='text' name='value' value="${value}"/>
+					<g:actionSubmit value="Search" id="searchSubmit"/>
+				</g:form>
+				</div>
+		<div class="mainContent">
+			<g:layoutBody/>
+		</div>
+		<div class="footer" role="contentinfo"><b>Minch'n'Schoen Conglomerate</b></div>		
 		
 	</body>
 </html>

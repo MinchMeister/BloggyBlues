@@ -7,11 +7,6 @@
 <body>
 <br/><br/>
 
-	<h2>Post Search</h2>
-	<g:form controller="bloggyBlues" method="post" >
-		<input type='text' name='value' value="${value}" />
-		<g:actionSubmit value="Search" />
-	</g:form>
 	
 Results:
 		<ol>

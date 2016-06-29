@@ -1,6 +1,9 @@
 body{
 	font-family: 'Open Sans', sans-serif;
+	margin: 0px;
+	background-color: #66ff66;
 }
+
 
 .blogPost{
 	line-height: 15px;
@@ -41,13 +44,28 @@ body{
 }
 
 .header{
-	background-color:gray;
+	background-color: #66ff66;
+	color:white;
 }
 
 .footer{
 	background-color:gray;
+	color:white;
+}
+
+.mainContent{
+	background-color: #0052cc;
+	color: white;
 }
 
 .showBlogPost{
 	max-width: 50%;
+}
+
+.header a:link{
+	color: black;
+}
+
+.header a:visited{
+	color: black;
 }

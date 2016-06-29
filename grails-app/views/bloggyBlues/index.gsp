@@ -17,9 +17,6 @@
 				</g:if>
 			</ul>
 		</div>
-
-			
-			
 			<div class="list">
 			 	<g:each in="${bloggyBluesInstanceList}" status="i" var="bloggyBluesInstance">
 			  		<div class="blog">
