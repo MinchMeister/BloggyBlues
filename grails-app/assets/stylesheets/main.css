@@ -8,7 +8,6 @@ body{
 	overflow: hidden;
 	text-overflow:ellipsis;
 	white-space:nowrap;
-	color: green;
 }
 
 .blogAuthor{
@@ -43,4 +42,12 @@ body{
 
 .header{
 	background-color:gray;
+}
+
+.footer{
+	background-color:gray;
+}
+
+.showBlogPost{
+	max-width: 50%;
 }

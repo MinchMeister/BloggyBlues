@@ -15,6 +15,7 @@
   		<asset:stylesheet src="application.css"/>
 		<asset:javascript src="application.js"/>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+		<g:javascript library="jquery" />
 		<g:layoutHead/>
 	</head>
 	<body>
@@ -27,18 +28,14 @@
 				<div id="loginHeader">
 					<g:loginControl/>
 				</div>
-			
-			</div>	
-	
-			
-			
+			</div>
 		</header>
 		
 		<g:layoutBody/>
 		
 		<footer>
 		<br/>
-		<div class="footer" role="contentinfo">footer: <b>Minch'n'Schoen Conglomerate LLC</b></div>
+		<div class="footer" role="contentinfo"><b>Minch'n'Schoen Conglomerate LLC</b></div>
 		<div id="spinner" class="spinner" style="display:none;"><g:message code="spinner.alt" default="Loading&hellip;"/></div>
 		</footer>
 		
