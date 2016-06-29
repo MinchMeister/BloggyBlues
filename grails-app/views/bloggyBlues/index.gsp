@@ -17,17 +17,13 @@
 				</g:if>
 			</ul>
 		</div>
-		
-		<div id="list-bloggyBlues" class="content scaffold-list" role="main">
-			<g:if test="${flash.message}">
-				<div class="message" role="status">${flash.message}</div>
-			</g:if>
+
 			
 			
 			<div class="list">
 			 	<g:each in="${bloggyBluesInstanceList}" status="i" var="bloggyBluesInstance">
 			  		<div class="blog">
-			   			<h2 class="blogTitle"><g:link action="show" id="${bloggyBluesInstance.id}" >${bloggyBluesInstance.postTitle}</g:link></h2>
+			   			<h2 class="blogTitle" id="${bloggyBluesInstance.postTitle}"><g:link action="show" id="${bloggyBluesInstance.id}" >${bloggyBluesInstance.postTitle}</g:link></h2>
 			   			<h3 id="${bloggyBluesInstance.id}" class="blogAuthor">By: ${bloggyBluesInstance.author}</h3>
 			   			<span>Date posted: ${bloggyBluesInstance.dateCreated}</span>
 			   			<div class="blogPost">${bloggyBluesInstance.content}</div>                
@@ -38,6 +34,6 @@
 			<div class="pagination">
 				<g:paginate total="${bloggyBluesInstanceCount ?: 0}" />
 			</div>
-		</div>
+		
 	</body>
 </html>
