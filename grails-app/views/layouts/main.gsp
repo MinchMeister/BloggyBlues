@@ -35,7 +35,7 @@
 					<input id="searchTextField" type='text' name='value' value="${value}"/>
 					<g:actionSubmit value="Search" id="searchSubmit"/>
 				</g:form>
-				</div>
+			</div>
 		<div class="mainContent">
 			<g:layoutBody/>
 		</div>

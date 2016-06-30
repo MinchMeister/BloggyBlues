@@ -1,7 +1,7 @@
 body{
 	font-family: 'Open Sans', sans-serif;
 	margin: 0px;
-	background-color: #66ff66;
+	background-color: black;
 }
 
 
@@ -36,7 +36,7 @@ body{
 }
 
 .nav ul li a:visited{
-	color:black;
+	color: white;
 }
 
 .nav ul li a:hover{
@@ -44,7 +44,7 @@ body{
 }
 
 .header{
-	background-color: #66ff66;
+	background-color: black;
 	color:white;
 }
 
@@ -54,7 +54,7 @@ body{
 }
 
 .mainContent{
-	background-color: #0052cc;
+	background-color: #0080ff;
 	color: white;
 }
 
@@ -63,9 +63,9 @@ body{
 }
 
 .header a:link{
-	color: black;
+	color: white;
 }
 
 .header a:visited{
-	color: black;
+	color: white;
 }
