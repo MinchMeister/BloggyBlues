@@ -40,7 +40,7 @@
 				By: ${bloggyBluesInstance.author}
 			</h3>
 			
-			<p class="blogPost">
+			<p>
 				${bloggyBluesInstance.content}
 			</p>   
 			           
