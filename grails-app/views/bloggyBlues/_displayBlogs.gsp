@@ -24,4 +24,4 @@
 			
 		</div>  
 	</g:each>
-</div>
+</div>	

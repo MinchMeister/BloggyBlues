@@ -18,9 +18,12 @@
 			</ul>
 		</div>
 		
-		
-		<g:render template="displayBlogs"/>
+	
+	
 			
+		<g:render template="displayBlogs"/>
+		 
+		
 			
 			
 		<div class="pagination">
