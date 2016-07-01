@@ -11,42 +11,21 @@
 		<div class="nav" role="navigation">
 			<ul>
 				<g:if test="${session.user}">
-					<li><g:link class="create" action="create">New Blog</g:link></li>
+					<li>
+						<g:link class="create" action="create">New Blog</g:link>
+					</li>
 				</g:if>
 			</ul>
 		</div>
 		
-			<div class="list">
-			 	<g:each in="${bloggyBluesInstanceList}" status="i" var="bloggyBluesInstance">
-			  		<div class="blog">
-			  		
-			   			<h2 id="${bloggyBluesInstance.postTitle}" class="blogTitle">
-			   				<g:link action="show" id="${bloggyBluesInstance.id}" >
-			   					${bloggyBluesInstance.postTitle}
-			   				</g:link>
-			   			</h2>
-			   			
-			   			<h3 id="${bloggyBluesInstance.id}" class="blogAuthor">
-			   				By: ${bloggyBluesInstance.author}
-			   			</h3>
-			   			
-			   			<p class="blogPost">
-			   				${bloggyBluesInstance.content}
-			   			</p>   
-			   			           
-			   			<span>Date posted origin: ${bloggyBluesInstance.dateCreated}</span>
-			   			<br/>
-			   			<span>Date posted update: ${bloggyBluesInstance.lastUpdated}</span>
-			   			
-			  		</div>  
-			 	</g:each>
-			</div>
+		
+		<g:render template="displayBlogs"/>
 			
 			
 			
-			<div class="pagination">
-				<g:paginate total="${bloggyBluesInstanceCount ?: 0}" />
-			</div>
+		<div class="pagination">
+			<g:paginate total="${bloggyBluesInstanceCount ?: 0}" />
+		</div>
 		
 	</body>
 </html>
