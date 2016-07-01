@@ -8,6 +8,7 @@ class BloggyBlues {
 	Date lastUpdated
 	String content
 	
+	static hasMany = [comments: Comment]
 	
     static constraints = {
     	postTitle(blank:false)
@@ -18,9 +19,11 @@ class BloggyBlues {
     }
     
     static mapping = {
-    	sort "dateCreated":"desc"
+    	sort dateCreated : "desc"
     }
     
+    //todo possibly not needed
     static belongsTo = [author:User]
 
+	
   }

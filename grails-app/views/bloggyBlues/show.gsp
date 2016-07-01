@@ -15,9 +15,6 @@
 	</g:if>
 		
 		
-		<g:render template="blog"/>
-		
-	
 		<div class="blog">
 		
 			<h2 id="${bloggyBluesInstance.postTitle}" class="blogTitle">
@@ -33,10 +30,12 @@
 			<p>
 				${bloggyBluesInstance.content}
 			</p>   
-			           
-			<span>Date posted origin: ${bloggyBluesInstance.dateCreated}</span>
-			<br/>
-			<span>Date posted update: ${bloggyBluesInstance.lastUpdated}</span>
+			<div id="creationDate">Creation Date:         
+				<g:formatDate date="${bloggyBluesInstance.dateCreated}" type="dateTime" style="MEDIUM"/>
+			</div>
+			<div id="lastUpdated">Last Updated:
+				<g:formatDate date="${bloggyBluesInstance.lastUpdated}" type="dateTime" style="MEDIUM"/>
+			</div>
 		</div>
 		
 

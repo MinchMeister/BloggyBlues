@@ -14,6 +14,7 @@
 
 		<g:render template="displayBlogs"/>
 		 
+		
 		<div class="pagination">
 			<g:paginate total="${bloggyBluesInstanceCount ?: 0}" />
 		</div>

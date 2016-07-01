@@ -17,10 +17,13 @@
 			<p class="blogPost">
 				${bloggyBluesInstance.content}
 			</p>   
-			           
-			<span>Date posted origin: ${bloggyBluesInstance.dateCreated}</span>
-			<br/>
-			<span>Date posted update: ${bloggyBluesInstance.lastUpdated}</span>
+			
+			<div id="creationDate">Creation Date:         
+				<g:formatDate date="${bloggyBluesInstance.dateCreated}" type="dateTime" style="MEDIUM"/>
+			</div>
+			<div id="lastUpdated">Last Updated:
+				<g:formatDate date="${bloggyBluesInstance.lastUpdated}" type="dateTime" style="MEDIUM"/>
+			</div>
 			
 		</div>  
 	</g:each>
