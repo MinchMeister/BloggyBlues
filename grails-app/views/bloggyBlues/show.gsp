@@ -4,19 +4,7 @@
 	<head>
 		<meta name="layout" content="main">
 		<g:set var="entityName" value="${message(code: 'bloggyBlues.label', default: 'BloggyBlues')}" />
-		<title><g:message code="default.show.label" args="[entityName]" /></title>
-		
-		<style>
-			#breadcrumb {
-   				 width: auto !important; 
-			}
-			
-			.blogPost{
-				line-height: 15px;
-				max-width: 50%;
-				white-space:nowrap;
-			}
-		</style>	
+		<title><g:message code="default.show.label" args="[entityName]" /></title>	
 	</head>
 	<body>
 	
@@ -26,6 +14,8 @@
 		<div id="successfulPost">Your post has been submitted.</div>
 	</g:if>
 		
+		
+		<g:render template="blog"/>
 		
 	
 		<div class="blog">
