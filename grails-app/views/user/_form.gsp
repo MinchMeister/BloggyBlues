@@ -1,7 +1,5 @@
 <%@ page import="bloggyblues.User" %>
 
-
-
 <div class="fieldcontain ${hasErrors(bean: userInstance, field: 'login', 'error')} required">
 	<label for="login">
 		<g:message code="user.login.label" default="Login" />
@@ -28,5 +26,3 @@
 	<g:textField name="name" required="" value="${userInstance?.name}"/>
 
 </div>
-
-
