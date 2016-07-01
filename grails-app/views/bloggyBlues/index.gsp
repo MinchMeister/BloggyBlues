@@ -15,16 +15,34 @@
 				</g:if>
 			</ul>
 		</div>
+		
 			<div class="list">
 			 	<g:each in="${bloggyBluesInstanceList}" status="i" var="bloggyBluesInstance">
 			  		<div class="blog">
-			   			<h2 class="blogTitle" id="${bloggyBluesInstance.postTitle}"><g:link action="show" id="${bloggyBluesInstance.id}" >${bloggyBluesInstance.postTitle}</g:link></h2>
-			   			<h3 id="${bloggyBluesInstance.id}" class="blogAuthor">By: ${bloggyBluesInstance.author}</h3>
-			   			<span>Date posted: ${bloggyBluesInstance.dateCreated}</span>
-			   			<div class="blogPost">${bloggyBluesInstance.content}</div>                
+			  		
+			   			<h2 id="${bloggyBluesInstance.postTitle}" class="blogTitle">
+			   				<g:link action="show" id="${bloggyBluesInstance.id}" >
+			   					${bloggyBluesInstance.postTitle}
+			   				</g:link>
+			   			</h2>
+			   			
+			   			<h3 id="${bloggyBluesInstance.id}" class="blogAuthor">
+			   				By: ${bloggyBluesInstance.author}
+			   			</h3>
+			   			
+			   			<p class="blogPost">
+			   				${bloggyBluesInstance.content}
+			   			</p>   
+			   			           
+			   			<span>Date posted origin: ${bloggyBluesInstance.dateCreated}</span>
+			   			<br/>
+			   			<span>Date posted update: ${bloggyBluesInstance.lastUpdated}</span>
+			   			
 			  		</div>  
 			 	</g:each>
 			</div>
+			
+			
 			
 			<div class="pagination">
 				<g:paginate total="${bloggyBluesInstanceCount ?: 0}" />
