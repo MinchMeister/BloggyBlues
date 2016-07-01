@@ -7,26 +7,39 @@
 		<title><g:message code="default.show.label" args="[entityName]" /></title>
 	</head>
 	<body>
-		<div class="nav" role="navigation">
-			<ul>
-				<li>
-					<a class="home" href="${createLink(uri: '/')}">
-						<g:message code="default.home.label"/>
-					</a>
-				</li>
-			</ul>
-		</div>
+	
+		
 		
 		<g:if test="${flash.message}">
 			<div id="successfulPost">Your post has been submitted.</div>
 		</g:if>
 		
-		<div class="blog">
-			<h2 class="blogTitle"><g:link action="show" id="${bloggyBluesInstance.id}" >${bloggyBluesInstance.postTitle}</g:link></h2>
-			<h3 id="${bloggyBluesInstance.id}" class="blogAuthor">By: ${bloggyBluesInstance.author}</h3>
-			<span>Date posted: ${bloggyBluesInstance.dateCreated}</span>
-			<div class="showBlogPost">${bloggyBluesInstance.content}</div>                
-		</div>  
+		
+	
+	<div class="blog">
+			  		
+			<h2 id="${bloggyBluesInstance.postTitle}" class="blogTitle">
+				<g:link action="show" id="${bloggyBluesInstance.id}" >
+					${bloggyBluesInstance.postTitle}
+				</g:link>
+			</h2>
+			
+			<h3 id="${bloggyBluesInstance.id}" class="blogAuthor">
+				By: ${bloggyBluesInstance.author}
+			</h3>
+			
+			<p>
+				${bloggyBluesInstance.content}
+			</p>   
+			           
+			<span>Date posted origin: ${bloggyBluesInstance.dateCreated}</span>
+			<br/>
+			<span>Date posted update: ${bloggyBluesInstance.lastUpdated}</span>
+			
+		</div>
+		
+		
+		 
 		
 		<g:form url="[resource:bloggyBluesInstance, action:'delete']" method="DELETE">
 				<fieldset class="buttons">
