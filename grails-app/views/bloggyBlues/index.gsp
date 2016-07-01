@@ -1,4 +1,3 @@
-
 <%@ page import="bloggyblues.BloggyBlues" %>
 <!DOCTYPE html>
 <html>
@@ -13,7 +12,6 @@
 			<ul>
 				<g:if test="${session.user}">
 					<li><g:link class="create" action="create">New Blog</g:link></li>
-					<li><g:link class="search" action="search">Search Entries</g:link></li>
 				</g:if>
 			</ul>
 		</div>

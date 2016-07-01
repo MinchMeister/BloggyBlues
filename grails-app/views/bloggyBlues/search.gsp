@@ -1,3 +1,4 @@
+<%@ page import="bloggyblues.BloggyBlues" %>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
@@ -7,15 +8,11 @@
 <body>
 <br/><br/>
 
-	
-Results:
-		<ol>
-			<g:each var="blog" in="${blogs}">
-				<li>${blog?.postTitle}
-				<g:if test="${blog.content}">- </g:if>
-					${blog?.content}
-				</li>
-			</g:each>
-		</ol>
+		<g:each var="blog" in="${blogs}">
+			<div class="blogResults">
+				<h2>${blog.postTitle}</h2>
+				<p>${blog?.content}</p>
+			</div>
+		</g:each>
 </body>
 </html>

@@ -4,7 +4,6 @@ body{
 	background-color: black;
 }
 
-
 .blogPost{
 	line-height: 15px;
 	max-width: 50%;
@@ -68,4 +67,8 @@ body{
 
 .header a:visited{
 	color: white;
+}
+
+.blogResults{
+	line-height: 15px;
 }

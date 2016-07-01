@@ -9,9 +9,6 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<title><g:layoutTitle default="Grails"/></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="shortcut icon" href="${assetPath(src: 'favicon.ico')}" type="image/x-icon">
-		<link rel="apple-touch-icon" href="${assetPath(src: 'apple-touch-icon.png')}">
-		<link rel="apple-touch-icon" sizes="114x114" href="${assetPath(src: 'apple-touch-icon-retina.png')}">
   		<asset:stylesheet src="application.css"/>
 		<asset:javascript src="application.js"/>
 		<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
@@ -21,25 +18,13 @@
 	</head>
 	<body>
 	
-		
-			<div class="header">
-				<h1>BLOGGY BLUES FORUM</h1>
-				<div id="BloggyBlueLogo" role="banner">
-					<a class="home" href="${createLink(uri: '/')}"><asset:image src="FroggyBlue.png" alt="FroggyBlue"/></a>
-				</div>
-				<a id="home" href="${createLink(uri: '/')}"><g:message code="default.home.label"/></a>
-				<div id="loginHeader">
-					<g:loginControl/>
-				</div>
-				<g:form controller="bloggyBlues" method="post" >
-					<input id="searchTextField" type='text' name='value' value="${value}"/>
-					<g:actionSubmit value="Search" id="searchSubmit"/>
-				</g:form>
-			</div>
+		<g:render template="/layouts/header"/>
+			
 		<div class="mainContent">
-			<g:layoutBody/>
+			<g:layoutBody class="mainContent"/>
 		</div>
-		<div class="footer" role="contentinfo"><b>Minch'n'Schoen Conglomerate</b></div>		
+		
+		<g:render template="/layouts/footer"/>		
 		
 	</body>
 </html>
