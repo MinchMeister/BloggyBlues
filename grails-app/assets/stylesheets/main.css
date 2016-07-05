@@ -1,31 +1,5 @@
-.blogPost{
-	line-height: 15px;
-	max-width: 50%;
-	overflow: hidden;
-	text-overflow:ellipsis;
-	white-space:nowrap;
-}
-
-.footer { 
-    bottom:0%;
-    width:100%; 
-    background-color: green; 
-    opacity: 0.9;
-    padding: 0 6em;
-}
-
-.header {
-	opacity: 0.9;
-	background-color: yellow;
-}
-
-.FroggyBlue {
-	width: 20%;
-}
-
 .dateTime {
 	color: white;
-	text-shadow: 3px 3px black;
 }
 
 body{
@@ -33,41 +7,117 @@ body{
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
+	font-family: 'Open Sans', sans-serif;
 }
 
+.header {
+	background-color: rgba(166, 166, 166, 0.9);
+}
+
+.jumbo{
+	background-color: rgba(82, 122, 122, 0.4);
+}
+
+.blogPost{
+	line-height: 20px;
+	max-width: 75%;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	font-size: 150%;
+}
+
+.footer { 
+    bottom:0%;
+    width:100%; 
+    background-color: black; 
+    opacity: 0.9;
+    padding: 0 6em;
+}
 
 h1 {
-	color: blue;
-	text-shadow: 3px 3px green;
-	text-align: center;
+	color: white;
+	font-family: 'Candal', sans-serif;
+}
+h1 a:link{
+	color: white;
+}
+
+h1 a:visited{
+	color: white;
+}
+
+h1 a:hover{
+	text-decoration: none;
+	
 }
 
 h2 {
 	color: white;
-	text-shadow: 3px 3px black; 
+	
+}
+
+h2 a:link{
+	color: white;
+}
+
+h2 a:visited{
+	color: white;
+}
+
+h2 a:hover{
+	text-decoration: none;
+	color: #b3cccc;
 }
 
 h3 {
 	color: white;
-	text-shadow: 3px 3px black; 
 }
 
 h4 {
-	color: white;
-	text-shadow: 3px 3px black; 
+	color: white; 
 }
 
 h5 {
 	color: white;
-	text-shadow: 3px 3px black; 
 }
 
 h6 {
 	color: white;
-	text-shadow: 3px 3px black; 
 }
 
 p {
-	color: white;
-	text-shadow: 3px 3px black; 
+	color: white; 
 }
+
+hr {
+	border-top: 4px double #8c8b8b;
+	text-align: center;
+}
+hr:after {
+	content: '\1F438';
+	display: inline-block;
+	position: relative;
+	top: -15px;
+	padding: 0 10px;
+	background: #f0f0f0;
+	color: green;
+	font-size: 18px;
+}
+
+#loginHeader{
+	text-align: right;
+}
+
+#multiplePages{
+	color: white;
+}
+
+#multiplePages a:link{
+	color: white;
+}
+
+#multiplePages a:visited{
+	color: white;
+}
+

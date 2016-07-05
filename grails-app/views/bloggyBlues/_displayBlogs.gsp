@@ -24,6 +24,7 @@
 			<div id="lastUpdated" class="dateTime">Last Updated:
 				<g:formatDate date="${bloggyBluesInstance.lastUpdated}" type="dateTime" style="MEDIUM"/>
 			</div>
+			<hr>
 			
 		</div>  
 	</g:each>

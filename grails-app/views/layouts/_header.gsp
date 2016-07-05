@@ -1,36 +1,42 @@
-<div class="header well container">
+<div class="header">
 	
-	<div class="col-md-12">
-		<h1>BLOGGY BLUES FORUM</h1>
-	</div>
-
-
-	<div class="form-group row">
-	
-		<div class="col-md-2">
-			<a href="${createLink(uri: '/')}">
-				<g:img src="FroggyBlue.png" alt="FroggyBlue" id="FrogIcon" class="FroggyBlue" />
-			</a>
-		</div>
-	
-		<g:form controller="bloggyBlues" method="post">
-			<div class="col-md-2">
-				<input class="form-control" id="searchTextField" type='text' name='value' value="${value}"/>
-			</div>
-			<div class="col-md-2">
-				<g:actionSubmit class="btn btn-primary" id="searchSubmit" value="Search"  />
-			</div>
-		</g:form>
-	
+	<div class="row">
+		
 		<div class="col-md-6">
+			<h1><a href="${createLink(uri: '/')}">BLOGGY BLUES FORUM</a></h1>
 		</div>
-		<div class="col-md-2" id="loginHeader">		
+		
+		
+		
+		<div id="loginHeader" class="col-md-6">		
 			<g:loginControl/>
 		</div>
-		
+			
 	</div>
+
+			
+			
+	<div class="row">
+			
+		<div class="col-lg-6">
+		</div>
+		<div class="col-lg-6">
+    			<div class="input-group">
+    			
+    			<g:form controller="bloggyBlues" method="post">
+					<input class="form-control" id="searchTextField" type='text' name='value' value="${value}"/>
+					<span class="input-group-btn">
+					<g:actionSubmit class="btn btn-primary form-control" id="searchSubmit" value="Search"/>
+					</span>
+				</g:form>
+      			
+      			
+    		</div><!-- /input-group -->
+  		</div>
+	</div>	
+			
+			
+			
 	
-	
-		
 	
 </div>

@@ -8,17 +8,20 @@
 	</head>
 	<body>
 
+	<div class="jumbo">
 		<g:if test="${session.user}">
 			<g:link class="create" action="create">New Blog</g:link>
 		</g:if>
 
-		<div class="col-md-6">
+		<div class="mainContent">
 			<g:render template="displayBlogs"/>
 		</div> 
 		
-		<div class="col-md-12">
+		<div class="col-md-12" id="multiplePages">
 			<g:paginate total="${bloggyBluesInstanceCount ?: 0}" />
 		</div>
+		
+	</div>
 		
 	</body>
 </html>
