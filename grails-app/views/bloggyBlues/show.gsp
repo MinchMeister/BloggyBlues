@@ -8,14 +8,11 @@
 	</head>
 	<body>
 	
-		
-		
 	<g:if test="${flash.message}">
 		<div id="successfulPost">Your post has been submitted.</div>
 	</g:if>
 		
-		
-		<div class="blog">
+		<div class="blog well">
 		
 			<h2 id="${bloggyBluesInstance.postTitle}" class="blogTitle">
 				<g:link action="show" id="${bloggyBluesInstance.id}" >
@@ -36,13 +33,13 @@
 			<div id="lastUpdated">Last Updated:
 				<g:formatDate date="${bloggyBluesInstance.lastUpdated}" type="dateTime" style="MEDIUM"/>
 			</div>
+			
+			<g:render template="/comment/commentEntry" bean="${bloggyBluesInstance}" var="blogEntry"/>
 		</div>
 		
+		
+		
 
-		
-		
-		 
-		
 		<g:form url="[resource:bloggyBluesInstance, action:'delete']" method="DELETE">
 			<fieldset class="buttons">
 				<g:link class="edit" action="edit" resource="${bloggyBluesInstance}">

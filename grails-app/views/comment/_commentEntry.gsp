@@ -1,3 +1,17 @@
+<div style="clear:both;">
+		<hr>
+		<div id="addComment">
+			<button class="pull-left btn">Add a Comment</button>
+			
+		</div>
+		<div id="commentForm" style="clear:both;">
+			<div class="message" id="commentMessage" style="display:none;"></div>
+			<ul class="errors" id="commentErrors" style="display:none;"></ul>
+			<g:render template="/comment/form" bean="${blogEntry}" var="blogEntry"/>
+		</div>
+		<ul id="commentList" style="clear:both;">
+		</ul>
+	</div>
 <script type="text/javascript">
 	$(function(){
 		var updateCommentList = function(){
