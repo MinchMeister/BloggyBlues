@@ -11,7 +11,7 @@ body{
 }
 
 .header {
-	background-color: rgba(166, 166, 166, 0.9);
+	background-color: rgba(255, 255, 0, 0.4);
 }
 
 .jumbo{
@@ -19,7 +19,7 @@ body{
 }
 
 .blogPost{
-	line-height: 20px;
+	line-height: 25px;
 	max-width: 75%;
 	overflow: hidden;
 	text-overflow: ellipsis;
@@ -33,23 +33,30 @@ body{
     background-color: black; 
     opacity: 0.9;
     padding: 0 6em;
+    text-align: center;
+    border-color: #ffdf00;
+}
+
+.footer p{
+	color: #ffdf00;
+	padding-top: 10px;
 }
 
 h1 {
-	color: white;
-	font-family: 'Candal', sans-serif;
+	color: #000099;
+	font-family: 'Permanent Marker', sans-serif;
+	text-align: center;
 }
 h1 a:link{
-	color: white;
+	color: #000099;
 }
 
 h1 a:visited{
-	color: white;
+	color: #000099;
 }
 
 h1 a:hover{
 	text-decoration: none;
-	
 }
 
 h2 {
