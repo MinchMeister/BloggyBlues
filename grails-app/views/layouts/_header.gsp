@@ -10,7 +10,7 @@
 			</div>
 		</g:form>
 	
-		<div class="col-md-2">		
+		<div class="col-md-2" id="loginHeader">		
 			<g:loginControl/>
 		</div>
 		

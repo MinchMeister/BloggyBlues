@@ -6,6 +6,14 @@
 	white-space:nowrap;
 }
 
+.footer { 
+    bottom:0%;
+    width:100%; 
+    background-color: yellow; 
+    opacity: 1;
+}
+
+/*
 body{
 	background-image:url("swamp.jpg");
 	background-repeat: no-repeat;
@@ -51,3 +59,4 @@ p {
 	color: white;
 	text-shadow: 3px 3px black; 
 }
+*/

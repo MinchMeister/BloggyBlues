@@ -7,7 +7,6 @@
 	<head>
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<title><g:layoutTitle default="Grails"/></title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
   		<asset:stylesheet src="application.css"/>
 		<asset:javascript src="application.js"/>
@@ -15,17 +14,17 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 		<g:javascript library="jquery" />
 		<asset:stylesheet src="main.css"/>
+		<title><g:layoutTitle default="Grails"/></title>
 		<g:layoutHead/>
 	</head>
 	<body class="container">
-	
-		<g:render template="/layouts/header"/>
+		<form role="form">
+		
+			<g:render template="/layouts/header"/>
+
+			<g:layoutBody/>
 			
-		<div class="mainContent">
-			<g:layoutBody class="mainContent"/>
-		</div>
-		
-		<g:render template="/layouts/footer"/>		
-		
+			<g:render template="/layouts/footer"/>		
+		</form>
 	</body>
 </html>

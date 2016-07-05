@@ -12,10 +12,11 @@
 			<g:link class="create" action="create">New Blog</g:link>
 		</g:if>
 
-		<g:render template="displayBlogs"/>
-		 
+		<div class="col-md-6">
+			<g:render template="displayBlogs"/>
+		</div> 
 		
-		<div class="pagination">
+		<div class="col-md-12">
 			<g:paginate total="${bloggyBluesInstanceCount ?: 0}" />
 		</div>
 		
