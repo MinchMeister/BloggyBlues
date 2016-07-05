@@ -1,74 +1,7 @@
-body{
-	font-family: 'Open Sans', sans-serif;
-	margin: 0px;
-	background-color: black;
-}
-
 .blogPost{
 	line-height: 15px;
 	max-width: 50%;
 	overflow: hidden;
 	text-overflow:ellipsis;
 	white-space:nowrap;
-}
-
-.blogAuthor{
-	line-height: 1px;
-}
-
-.blogTitle a:visited{
-	color: black;
-}
-
-.blogTitle a:link{
-	text-decoration: none;
-	color:black;
-}
-
-.blogTitle a:hover{
-	color: gray;
-}
-
-.nav ul li{
-	list-style-type: none;
-	display:inline;
-}
-
-.nav ul li a:visited{
-	color: white;
-}
-
-.nav ul li a:hover{
-	color:gray;
-}
-
-.header{
-	background-color: black;
-	color:white;
-}
-
-.footer{
-	background-color:gray;
-	color:white;
-}
-
-.mainContent{
-	background-color: #0080ff;
-	color: white;
-}
-
-.showBlogPost{
-	max-width: 50%;
-}
-
-.header a:link{
-	color: white;
-}
-
-.header a:visited{
-	color: white;
-}
-
-.blogResults{
-	line-height: 15px;
 }
