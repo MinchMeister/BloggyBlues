@@ -4,7 +4,7 @@
 	<head>
 		<meta name="layout" content="main">
 		<g:set var="entityName" value="${message(code: 'bloggyBlues.label', default: 'BloggyBlues')}" />
-		<title><g:message code="default.show.label" args="[entityName]" /></title>	
+		<title><g:message code="default.show.label" args="[entityName]" /></title>
 	</head>
 	<body>
 	
@@ -12,7 +12,7 @@
 		<div id="successfulPost">Your post has been submitted.</div>
 	</g:if>
 		
-		<div class="blog well">
+		<div class="blog">
 		
 			<h2 id="${bloggyBluesInstance.postTitle}" class="blogTitle">
 				<g:link action="show" id="${bloggyBluesInstance.id}" >
@@ -27,10 +27,10 @@
 			<p>
 				${bloggyBluesInstance.content}
 			</p>   
-			<div id="creationDate">Creation Date:         
+			<div id="creationDate" class="dateTime">Creation Date:         
 				<g:formatDate date="${bloggyBluesInstance.dateCreated}" type="dateTime" style="MEDIUM"/>
 			</div>
-			<div id="lastUpdated">Last Updated:
+			<div id="lastUpdated" class="dateTime">Last Updated:
 				<g:formatDate date="${bloggyBluesInstance.lastUpdated}" type="dateTime" style="MEDIUM"/>
 			</div>
 			

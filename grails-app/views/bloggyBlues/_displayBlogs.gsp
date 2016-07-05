@@ -18,10 +18,10 @@
 				${bloggyBluesInstance.content}
 			</p>   
 			
-			<div id="creationDate">Creation Date:         
+			<div id="creationDate" class="dateTime">Creation Date:         
 				<g:formatDate date="${bloggyBluesInstance.dateCreated}" type="dateTime" style="MEDIUM"/>
 			</div>
-			<div id="lastUpdated">Last Updated:
+			<div id="lastUpdated" class="dateTime">Last Updated:
 				<g:formatDate date="${bloggyBluesInstance.lastUpdated}" type="dateTime" style="MEDIUM"/>
 			</div>
 			

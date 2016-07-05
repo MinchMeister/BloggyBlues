@@ -1,5 +1,4 @@
-<div class="col-md-12">
-	<div class="footer" role="contentinfo">
+
+	<div class="footer col-md-12 well" role="contentinfo">
 		<b>Minch'n'Schoen Conglomerate</b>
 	</div>
-</div>
