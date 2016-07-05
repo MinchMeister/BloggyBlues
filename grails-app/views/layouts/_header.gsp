@@ -1,20 +1,35 @@
 <div class="header">
-	<h1>BLOGGY BLUES FORUM</h1>
+
+	<div class="form-group">
+		<g:form controller="bloggyBlues" method="post">
+			<div class="col-md-3">
+				<input class="form-control" id="searchTextField" type='text' name='value' value="${value}"/>
+			</div>
+			<div class="col-md-7">
+				<g:actionSubmit class="btn btn-primary" id="searchSubmit" value="Search"  />
+			</div>
+		</g:form>
 	
-	<div id="BloggyBlueLogo" role="banner">
-		<a class="home" href="${createLink(uri: '/')}"><asset:image src="FroggyBlue.png" alt="FroggyBlue"/></a>
+		<div class="col-md-2">		
+			<g:loginControl/>
+		</div>
+		
 	</div>
 	
-	<a id="home" href="${createLink(uri: '/')}">
-		<g:message code="default.home.label"/>
-	</a>
 	
-	<div id="loginHeader">
-		<g:loginControl/>
+	
+	
+	<div class="form-group">
+		
+		<div class="col-md-6">
+			<h1>BLOGGY BLUES FORUM</h1>
+		</div>
+		
+		<div class="col-md-6">
+			<a href="${createLink(uri: '/')}">
+				<g:img src="FroggyBlue.png" alt="FroggyBlue" style="FroggyBlue" />
+			</a>
+		</div>
+	
 	</div>
-	
-	<g:form controller="bloggyBlues" method="post" >
-		<input id="searchTextField" type='text' name='value' value="${value}"/>
-			<g:actionSubmit value="Search" id="searchSubmit"/>
-	</g:form>
 </div>

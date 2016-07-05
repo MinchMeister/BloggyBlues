@@ -5,3 +5,49 @@
 	text-overflow:ellipsis;
 	white-space:nowrap;
 }
+
+body{
+	background-image:url("swamp.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+FroggyBlue{
+	
+}
+
+h1 {
+	color: white;
+	text-shadow: 3px 3px black; 
+}
+
+h2 {
+	color: white;
+	text-shadow: 3px 3px black; 
+}
+
+h3 {
+	color: white;
+	text-shadow: 3px 3px black; 
+}
+
+h4 {
+	color: white;
+	text-shadow: 3px 3px black; 
+}
+
+h5 {
+	color: white;
+	text-shadow: 3px 3px black; 
+}
+
+h6 {
+	color: white;
+	text-shadow: 3px 3px black; 
+}
+
+p {
+	color: white;
+	text-shadow: 3px 3px black; 
+}

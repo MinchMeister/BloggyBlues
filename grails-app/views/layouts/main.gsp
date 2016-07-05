@@ -17,7 +17,7 @@
 		<asset:stylesheet src="main.css"/>
 		<g:layoutHead/>
 	</head>
-	<body>
+	<body class="container">
 	
 		<g:render template="/layouts/header"/>
 			
