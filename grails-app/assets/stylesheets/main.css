@@ -28,6 +28,10 @@ body{
     padding-left: 20px;
 }
 
+#showBlogs{
+    background-color: rgba(82, 122, 122, 0.7);
+}
+
 .btn{
     margin-left: 20px;
 }
@@ -87,7 +91,9 @@ h1 a:hover{
 }
 
 h2 {
-    font-family: 'Permanent Marker', sans-serif;
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: 400;
+    font-size: 50px;
 	color: white;
 }
 

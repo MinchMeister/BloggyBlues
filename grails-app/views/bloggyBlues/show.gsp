@@ -12,7 +12,7 @@
 		<div id="successfulPost">Your post has been submitted.</div>
 	</g:if>
 		
-		<div class="blog">
+		<div class="blog" id="showBlogs">
 		
 			<h2 id="${bloggyBluesInstance.postTitle}" class="blogTitle">
 				<g:link action="show" id="${bloggyBluesInstance.id}" >
@@ -35,18 +35,21 @@
 			</div>
 			
 			<g:render template="/comment/commentEntry" bean="${bloggyBluesInstance}" var="blogEntry"/>
-		</div>
-		
-		
-		
-
-		<g:form role="form" class="jumbo" url="[resource:bloggyBluesInstance, action:'delete']" method="DELETE">
+            
+            <g:form role="form" url="[resource:bloggyBluesInstance, action:'delete']" method="DELETE">
 			<g:link class="edit btn btn-primary" action="edit" resource="${bloggyBluesInstance}">
 				<g:message code="default.button.edit.label" default="Edit" />
 			</g:link>
 				
 			<g:actionSubmit class="delete btn btn-primary" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
 		</g:form>
+            
+		</div>
+		
+		
+		
+
+		
 		
 		
 		<br/>
