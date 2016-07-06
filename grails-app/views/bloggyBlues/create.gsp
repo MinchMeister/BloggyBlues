@@ -8,7 +8,7 @@
 	<body>
 		
 		<div id="create-bloggyBlues" class="content scaffold-create" role="main">
-			<h1>Write a post</h1>
+			<h2 class="pageHeaderTitles">Write a post</h2>
 			<g:if test="${flash.message}">
 				<div class="message" role="status">
 					${flash.message}

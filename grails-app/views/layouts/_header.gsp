@@ -6,7 +6,8 @@
 			<h1><a href="${createLink(uri: '/')}">BLOGGY BLUES BLOG</a></h1>
 		</div><!--
 		
-		--><div class="col-md-6 col-xs-0 vcenter">
+		--><div class="col-md-2 vcenter"></div><!--
+        --><div class="col-md-4 col-xs-0 vcenter">
     			<div class="input-group">
     			<g:form controller="bloggyBlues" method="post">
 					<input class="form-control" id="searchTextField" type='text' name='value' value="${value}" placeholder="Search for..."/>
