@@ -1,7 +1,7 @@
 <div style="clear:both;">
 		<hr>
 		<div id="addComment">
-			<button class="pull-left btn">Add a Comment</button>
+			<button class="pull-left btn" id="commentButton">Add a Comment</button>
 			
 		</div>
 		<div id="commentForm" style="clear:both;">
@@ -35,7 +35,7 @@
 		    evt.preventDefault()
 		    $("#commentMessage, #commentErrors").html("").hide()
 		    $("#commentForm form")[0].reset()
-		    $("#commentForm").slideDown()
+		    $("#commentForm").slideToggle()
 		});
 		$("#commentSaveForm").submit(function(evt){
 			$("#commentMessage, #commentErrors").html("").hide()

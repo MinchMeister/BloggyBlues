@@ -3,7 +3,7 @@
     <div class="row">
 		
 		<div class="col-md-6 col-xs-12 vcenter">
-			<h1><a href="${createLink(uri: '/')}">BLOGGY BLUES BLOG</a></h1>
+			<h1><a href="${createLink(uri: '/')}" id="pageTitle">BLOGGY BLUES BLOG</a></h1>
 		</div><!--
 		
 		--><div class="col-md-2 vcenter"></div><!--
