@@ -40,15 +40,15 @@
 		
 		
 
-		<g:form url="[resource:bloggyBluesInstance, action:'delete']" method="DELETE">
-			<fieldset class="buttons">
-				<g:link class="edit" action="edit" resource="${bloggyBluesInstance}">
-					<g:message code="default.button.edit.label" default="Edit" />
-				</g:link>
+		<g:form role="form" class="jumbo" url="[resource:bloggyBluesInstance, action:'delete']" method="DELETE">
+			<g:link class="edit btn btn-primary" action="edit" resource="${bloggyBluesInstance}">
+				<g:message code="default.button.edit.label" default="Edit" />
+			</g:link>
 				
-				<g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
-			</fieldset>
+			<g:actionSubmit class="delete btn btn-primary" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
 		</g:form>
 		
+		
+		<br/>
 	</body>
 </html>
