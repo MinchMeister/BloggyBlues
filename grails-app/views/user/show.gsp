@@ -9,8 +9,12 @@
 	<body>
 		
 		
+		<div class="well">
+		
+		
 		<div id="show-user" class="content scaffold-show" role="main">
-			<h1><g:message code="default.show.label" args="[entityName]" /></h1>
+			<h2><g:message code="default.show.label" args="[entityName]" /></h2>
+			
 			<g:if test="${flash.message}">
 			<div class="message" role="status">${flash.message}</div>
 			</g:if>
@@ -61,6 +65,7 @@
 					<g:actionSubmit class="delete" action="delete" value="${message(code: 'default.button.delete.label', default: 'Delete')}" onclick="return confirm('${message(code: 'default.button.delete.confirm.message', default: 'Are you sure?')}');" />
 				</fieldset>
 			</g:form>
+		</div>
 		</div>
 	</body>
 </html>
