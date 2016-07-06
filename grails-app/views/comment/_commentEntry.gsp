@@ -1,18 +1,18 @@
+
 <div style="clear:both;">
 	<hr>
 	
-	<div id="addComment">
-		<button class="btn btn-primary" id="commentButton">Add a Comment</button>
-	</div>
-	
+	<button class="btn btn-primary" id="commentButton">Add a Comment</button>
 	
 	<div id="commentForm" style="clear:both;">
 		<div class="message" id="commentMessage" style="display:none;"></div>
 		<ul class="errors" id="commentErrors" style="display:none;"></ul>
 		<g:render template="/comment/form" bean="${blogEntry}" var="blogEntry"/>
 	</div>
+	
 	<ul id="commentList" style="clear:both;">
 	</ul>
+	
 </div>		
 
 
@@ -26,7 +26,7 @@
 					$("#commentForm").slideUp();
 					$("#commentList").html("")
 					$.each(data, function(){
-						$("#commentList").append("<li><span class='nameComment'>" + this.name + "</span></li><li><span class='dataComment'>" + this.dateCreated +"</span><pre>" + this.comment + "</pre></li>").slideDown()
+						$("#commentList").append("<h4 id='commentName' class='nameComment'>" +'By: ' + this.name + "</h4>" + this.dateCreated + "<p class='commentStyle'>" + this.comment + "</p>").slideDown()
 					});
 				}
 			})
@@ -35,7 +35,7 @@
 	    $("#commentForm, #commentList").hide()
 	    updateCommentList();
 	    
-	    $("#addComment").click(function(evt){
+	    $("#commentButton").click(function(evt){
 		    evt.preventDefault()
 		    $("#commentMessage, #commentErrors").html("").hide()
 		    $("#commentForm form")[0].reset()

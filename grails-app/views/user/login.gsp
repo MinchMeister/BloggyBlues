@@ -6,7 +6,7 @@
 	</head>
 	<body>
        
-		 <br/>       
+		      
 	     <g:form role="form" action="authenticate" method="post" class="jumbo">
 	     
 	    	 <h2><g:message code="default.login.label" args="[entityName]" /></h2>
