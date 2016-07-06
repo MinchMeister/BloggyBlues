@@ -19,7 +19,7 @@
 		<g:layoutHead/>
 	</head>
 	<body class="container">
-		<form role="form">
+		<form class="form">
 		
 			<g:render template="/layouts/header"/>
 
