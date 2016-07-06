@@ -5,49 +5,42 @@
 		<title>Login</title>         
 	</head>
 	<body>
-  
-	  	<div class="nav" role="navigation">
-			<ul>
-				<li>
-					<a class="create" href="${createLink(uri: '/user/create')}">Create Account</a>
-				</li>
-			</ul>
-		</div>
-	  
-	    <div class="body">
-	      <g:if test="${flash.message}">
-	        <div class="message">${flash.message}</div>
-	      </g:if>
-	      <g:form action="authenticate" method="post" >
-	        <div class="dialog">
-	          <table>
-	            <tbody>            
-	              <tr class="prop">
-	                <td class="name">
-	                  <label for="login">Login:</label>
-	                </td>
-	                <td>
-	                  <input type="text" id="login" name="login"/>
-	                </td>
-	              </tr> 
-	          
-	              <tr class="prop">
-	                <td class="name">
-	                  <label for="password">Password:</label>
-	                </td>
-	                <td>
-	                  <input type="password" id="password" name="password"/>
-	                </td>
-	              </tr> 
-	            </tbody>
-	          </table>
-	        </div>
-	        <div class="buttons">
-	          <span class="button">
-	            <input class="save" type="submit" value="Login" />
-	          </span>
-	        </div>
-	      </g:form>
-	    </div>
+       
+		 <br/>       
+	     <g:form role="form" action="authenticate" method="post" class="jumbo">
+	     
+		     <g:if test="${flash.message}">
+		    	<div class="message"><h4>${flash.message}</h4></div>
+		     </g:if>
+	     
+	     
+			<div class="form-group">
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+						<input type="text" class="form-control" id="login" name="login" placeholder="User Name"/>
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-md-4 col-sm-4 col-xs-4">
+						<input type="password" class="form-control" id="password" name="password" placeholder="Password"/>
+					</div>
+					<div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
+					</div>
+				</div>
+				
+		    	<br/>
+		    	
+				<div class="row col-md-4">     
+			    	<input id="login" class="btn btn-primary" type="submit" value="Login"/>
+			    	
+					<a class="create" href="${createLink(uri: '/user/create')}">
+						<span class="btn btn-primary">Create Account</span>
+					</a>
+				</div>
+	    	</div>
+	    </g:form>
+	    
 	</body>
 </html>

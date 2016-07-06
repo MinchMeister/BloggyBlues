@@ -10,7 +10,7 @@
 
 	<div class="jumbo">
 		<g:if test="${session.user}">
-			<g:link class="create" action="create">New Blog</g:link>
+			<g:link class="create btn btn-primary" action="create">New Blog</g:link>
 		</g:if>
 
 		<div class="mainContent">
