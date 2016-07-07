@@ -8,9 +8,30 @@
 	</head>
 	<body>
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	<g:if test="${flash.message}">
-		<div id="successfulPost">Your post has been submitted.</div>
+		<div id="successfulPost">
+			Your post has been submitted.
+		</div>
 	</g:if>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		
 		<div class="blog" id="showBlogs">
 		

@@ -12,9 +12,11 @@
 	    	 <h2><g:message code="default.login.label" args="[entityName]" /></h2>
 	     
 	     
-		     <g:if test="${flash.message}">
-		    	<div class="message"><h4>${flash.message}</h4></div>
-		     </g:if>
+ <g:if test="${flash.message}">
+	<div class="message">
+		${flash.message}
+	</div>
+ </g:if>
 	     
 	     
 	     
