@@ -22,7 +22,6 @@ class BloggyBlues {
     	sort dateCreated : "desc"
     }
     
-    //todo possibly not needed
     static belongsTo = [author:User]
 
 	
